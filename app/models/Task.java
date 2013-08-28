@@ -1,10 +1,12 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import javax.persistence.*;
 import play.db.ebean.*;
+import scala.Array;
 
 @Entity
 public class Task extends Model {
@@ -34,4 +36,8 @@ public class Task extends Model {
         task.save();
         return task;
     }	
+    
+    public static List<Task> all(){
+    	return new ArrayList<Task>();
+    }
 }

@@ -34,5 +34,7 @@ public class Project extends Model{
 		return find.where().eq("members.email",user).findList();
 	}
 	
-	
+	public static List<Project> all(){
+		return new ArrayList<Project>();
+	}	
 }
